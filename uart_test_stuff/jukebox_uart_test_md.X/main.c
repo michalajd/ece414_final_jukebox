@@ -72,17 +72,19 @@ void main() {
     } */
     
     char buffer[30];
+    char c;
     
     uart1_init(9600);
-    LATBbits.LATB0 = 0;
+    ada_config();
+    /*LATBbits.LATB0 = 0;
     
     uint16_t t1 = timer1_read();
     uint16_t t2 = timer1_read();
-    if (timer1_ms_elapsed(t1, t2) > MS_10);
+    if (timer1_ms_elapsed(t1, t2) > MS_10); 
     
-    LATBbits.LATB0 = 1;
+    LATBbits.LATB0 = 1 */
     
-    uart1_txwrite_str("#1\n\r");
+    //uart1_txwrite_str("#0\n");
     
     while(1){
         
@@ -90,13 +92,13 @@ void main() {
         //uart1_txwrite(c);
         
         if(uart1_rxrdy()){
-            uart1_txwrite_str("#1\n\r");
+            c = uart1_rxread();
+            uart1_txwrite_str("#0\n");
         }
         
         
     }
-    
-    
+ 
 
 
-}
+} 
