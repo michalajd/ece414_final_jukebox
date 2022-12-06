@@ -1,5 +1,5 @@
-build/default/production/adafruit.o: adafruit.c uart1.h ztimer.h
+build/default/production/adafruit.o: adafruit.c uart1.h timer1.h
 
 uart1.h:
 
-ztimer.h:
+timer1.h:

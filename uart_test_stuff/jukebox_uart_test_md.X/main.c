@@ -15,6 +15,7 @@
 #include <xc.h>
 #include <inttypes.h>
 #include <plib.h>
+#include "timer1.h"
 
 void main() {
   /*  char letter;
@@ -46,11 +47,18 @@ void main() {
         }
         
     }
-   * */
-    char num;
-    uart1_init(9600);
-    uart1_txwrite_str("uart configured \n\r");
-    ada_config();
+} */
+    
+    
+    /*char num;
+    uart1_init(115200);
+    uart1_txwrite_str("uart configured success \n\r");
+    ada_config2();
+    uart1_txwrite_str("adafruit configured success \n\r");
+
+    
+     num = uart1_rxread();
+    
     uart1_txwrite_str("Type a number and see if a song plays! \n\r");
     while (1) {
        if (uart1_rxrdy()) {
@@ -61,7 +69,34 @@ void main() {
            }
            else uart1_txwrite_str("void\n\r");
        } 
+    } */
+    
+    char buffer[30];
+    
+    uart1_init(9600);
+    LATBbits.LATB0 = 0;
+    
+    uint16_t t1 = timer1_read();
+    uint16_t t2 = timer1_read();
+    if (timer1_ms_elapsed(t1, t2) > MS_10);
+    
+    LATBbits.LATB0 = 1;
+    
+    uart1_txwrite_str("#1\n\r");
+    
+    while(1){
+        
+        //char c = uart1_rxread();
+        //uart1_txwrite(c);
+        
+        if(uart1_rxrdy()){
+            uart1_txwrite_str("#1\n\r");
+        }
+        
+        
     }
+    
+    
+
+
 }
-
-

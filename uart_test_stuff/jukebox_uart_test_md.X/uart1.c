@@ -24,6 +24,8 @@ void uart1_init(uint32_t baudrate){
     U1RXR = 0x0;
     // green to pin 9, white to pin 2
     
+    LATBbits.LATB0 = 1;
+    
      __XC_UART = 1;
 }
 

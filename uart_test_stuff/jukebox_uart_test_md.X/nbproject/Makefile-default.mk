@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c uart1.c ztimer.c adafruit.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c uart1.c adafruit.c timer1.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/ztimer.o ${OBJECTDIR}/adafruit.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/uart1.o.d ${OBJECTDIR}/ztimer.o.d ${OBJECTDIR}/adafruit.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/adafruit.o ${OBJECTDIR}/timer1.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/uart1.o.d ${OBJECTDIR}/adafruit.o.d ${OBJECTDIR}/timer1.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/ztimer.o ${OBJECTDIR}/adafruit.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/adafruit.o ${OBJECTDIR}/timer1.o
 
 # Source Files
-SOURCEFILES=main.c uart1.c ztimer.c adafruit.c
+SOURCEFILES=main.c uart1.c adafruit.c timer1.c
 
 
 
@@ -119,17 +119,17 @@ ${OBJECTDIR}/uart1.o: uart1.c  .generated_files/flags/default/cb71f3afbf33953582
 	@${RM} ${OBJECTDIR}/uart1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/uart1.o.d" -o ${OBJECTDIR}/uart1.o uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/ztimer.o: ztimer.c  .generated_files/flags/default/b3baad0e0c1b2ff3c5b07ca1c4f7e45f6379db7 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/ztimer.o.d 
-	@${RM} ${OBJECTDIR}/ztimer.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/ztimer.o.d" -o ${OBJECTDIR}/ztimer.o ztimer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	
 ${OBJECTDIR}/adafruit.o: adafruit.c  .generated_files/flags/default/42dfa60520e581e4e72f233f51ca41340545fe89 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/adafruit.o.d 
 	@${RM} ${OBJECTDIR}/adafruit.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/adafruit.o.d" -o ${OBJECTDIR}/adafruit.o adafruit.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/timer1.o: timer1.c  .generated_files/flags/default/937192605ed7eaebcc54cec8a807339b1375b1c1 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/timer1.o.d 
+	@${RM} ${OBJECTDIR}/timer1.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/timer1.o.d" -o ${OBJECTDIR}/timer1.o timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
 else
 ${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/1afbca5dcb52790a6023fa111b23c1617ba94be8 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
@@ -144,17 +144,17 @@ ${OBJECTDIR}/uart1.o: uart1.c  .generated_files/flags/default/f741e0b9291ee26602
 	@${RM} ${OBJECTDIR}/uart1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/uart1.o.d" -o ${OBJECTDIR}/uart1.o uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/ztimer.o: ztimer.c  .generated_files/flags/default/e359b486c3e662e50d4bae84e18cc836c8d9f3f7 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/ztimer.o.d 
-	@${RM} ${OBJECTDIR}/ztimer.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/ztimer.o.d" -o ${OBJECTDIR}/ztimer.o ztimer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	
 ${OBJECTDIR}/adafruit.o: adafruit.c  .generated_files/flags/default/4aed31049b0e9cd4d8c1e5db979b4a3845858d1e .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/adafruit.o.d 
 	@${RM} ${OBJECTDIR}/adafruit.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/adafruit.o.d" -o ${OBJECTDIR}/adafruit.o adafruit.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/timer1.o: timer1.c  .generated_files/flags/default/a9428079b5b6912876a6116ced8a343deb17d301 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/timer1.o.d 
+	@${RM} ${OBJECTDIR}/timer1.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/timer1.o.d" -o ${OBJECTDIR}/timer1.o timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
 endif
 
