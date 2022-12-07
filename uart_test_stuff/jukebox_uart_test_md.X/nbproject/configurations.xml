@@ -7,6 +7,7 @@
       <itemPath>uart1.h</itemPath>
       <itemPath>adafruit.h</itemPath>
       <itemPath>timer1.h</itemPath>
+      <itemPath>porta_in.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -19,6 +20,7 @@
       <itemPath>uart1.c</itemPath>
       <itemPath>adafruit.c</itemPath>
       <itemPath>timer1.c</itemPath>
+      <itemPath>porta_in.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

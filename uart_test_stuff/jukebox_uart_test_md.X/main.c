@@ -71,8 +71,9 @@ void main() {
        } 
     } */
     
-    char buffer[30];
+    char buffer[20];
     char c;
+    long card;
     
     uart1_init(9600);
     ada_config();
@@ -85,19 +86,57 @@ void main() {
     LATBbits.LATB0 = 1 */
     
     //uart1_txwrite_str("#0\n");
-    
-    while(1){
-        
-        //char c = uart1_rxread();
-        //uart1_txwrite(c);
-        
+    int i = 777;
+        while(1){
         if(uart1_rxrdy()){
-            c = uart1_rxread();
-            uart1_txwrite_str("#0\n");
+            char tmp = uart1_rxread();
+            if(tmp >= 'a' && tmp <= 'z') buffer[i] = tmp - 32;
+            else if(tmp >= 'A' && tmp <= 'Z') buffer[i] = tmp + 32;
+            else buffer[i] = tmp;
+            i++;
         }
-        
-        
+        if(i > 0 && uart1_txrdy()){
+            i--;
+            uart1_txwrite(buffer[i]);
+        }
     }
+//    while(1){
+//        if(uart1_rxrdy()){
+//          card = uart1_rxread();
+//          uart1_txwrite(c);
+//          printf(c);
+//          printf("hello");
+//        }
+//        
+//        
+//        /*if(uart1_rxread()){
+//            sprintf(buffer, "%d");
+//            uart1_txwrite_str(buffer);
+//        }
+//            card = uart1_rxread();
+//            printf("test ");
+//            printf(card);
+//            
+//            if(card == "1082130432"){
+//                uart1_txwrite_str("#3\n");
+//            }else if(card == 0){
+//                uart1_txwrite_str("#0\n");
+//            }
+//            else if(card == "0001763692"){
+//                uart1_txwrite_str("#1\n");
+//            }
+//            else uart1_txwrite_str("#2\n");
+//        }
+//        
+//        
+//        
+//         if(uart1_rxrdy()){
+//            c = uart1_rxread();
+//            uart1_txwrite_str("#3\n");
+//        }*/
+//
+//        
+//    }
  
 
 
