@@ -15,6 +15,7 @@
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
                 <sourceRootElem>../ece414_arnold_dennis/LCD_Display.X</sourceRootElem>
+                <sourceRootElem>../JukeBox.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

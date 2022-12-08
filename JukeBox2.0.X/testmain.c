@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include "uart1.h"
 #include <plib.h>
+#include "rfid.h"
+#include "fsm.h"
+
 
 /* Clock configuration */
 #pragma config FNOSC = FRCPLL, POSCMOD = OFF
@@ -18,21 +21,22 @@
 
 #define RX_BUFFER 100
 
+char buffer[RX_BUFFER];
+char temp_buff;
+uint8_t i = 0;
+uint8_t tag_flag;
+
 int main(int argc, char** argv) {
     uart1_init(9600);
     ada_config();
-    //uart1_txwrite_str("Hello World! Jason Sonkin, Sam Fowler, Allen Wu");
+    FSM_init();
     
-    char num = 0x00;
-    
-    char buffer[RX_BUFFER];
-    uint8_t i = 0;
     while(1){
         
-        
-        
-        if(uart1_rxrdy()){
+        while(uart1_rxrdy()){
             uart1_txwrite_str("q\n");
+                //if(portb7_in_read() != 0) volumedown();
+                //if(portb8_in_read() != 0) volumeup();
             
                 char tmp = uart1_rxread();
                 buffer[i] = tmp;
@@ -40,20 +44,16 @@ int main(int argc, char** argv) {
 
             if (i>9) {
                 i = 0;
-                uart1_txwrite(buffer[5]);
+                temp_buff = buffer[5]; // temp char to store tag ID for tag())
+                //uart1_txwrite(buffer[5]); // uncomment this to see first two hex numbers of tag ID (also comment out all other uart writes)
+                
             }
-        }
-
-        if(buffer[5] == 0x1A){
-            //uart1_txwrite_str("q\n");
-            uart1_txwrite_str("#0\n");
-        }
-        else if(buffer[5] == 0x2B){
-            //uart1_txwrite_str("q\n");
-            uart1_txwrite_str("#1\n");
+                //tag_flag = tag_read_bool(); // sets tag flag to 1 while input is reading
         }
         
-        
+        tag(temp_buff);
+        //FSM_tick();
+        //tag_flag = 0; // sets tag flag to 0 when there's no input
         
     } // end of while(1)
     

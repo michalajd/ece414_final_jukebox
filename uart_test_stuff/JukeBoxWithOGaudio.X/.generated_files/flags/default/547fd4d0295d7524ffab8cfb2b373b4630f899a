@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\dennismj\Documents\ece414_final_jukebox\uart_test_stuff\JukeBoxWithOGaudio.X\testmain.c

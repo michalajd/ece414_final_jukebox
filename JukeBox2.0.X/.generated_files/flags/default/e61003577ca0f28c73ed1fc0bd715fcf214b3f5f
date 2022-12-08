@@ -1,1 +1,0 @@
- $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\arnolddj\Documents\ECE414_Labs\JukeBox2.0.X\ztimer.c

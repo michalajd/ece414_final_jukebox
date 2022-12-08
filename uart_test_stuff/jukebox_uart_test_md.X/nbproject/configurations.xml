@@ -5,7 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>uart1.h</itemPath>
-      <itemPath>adafruit.h</itemPath>
       <itemPath>timer1.h</itemPath>
       <itemPath>porta_in.h</itemPath>
     </logicalFolder>
