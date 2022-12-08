@@ -15,6 +15,8 @@
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
                 <sourceRootElem>../ece414_arnold_dennis/LCD_Display.X</sourceRootElem>
+                <sourceRootElem>../lcd</sourceRootElem>
+                <sourceRootElem>../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

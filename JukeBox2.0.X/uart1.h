@@ -12,7 +12,7 @@ void uart1_init(uint32_t baudrate);
 uint32_t setBaudRate(uint32_t baudrate);
 
 uint8_t uart1_txrdy();
-void uart1_txwrite(char c);
+void uart1_txwrite(int c);
 void uart1_txwrite_str(char *cp);
 
 uint8_t uart1_rxrdy();

@@ -42,16 +42,22 @@ int main(int argc, char** argv) {
                 i = 0;
                 uart1_txwrite(buffer[5]);
             }
+                
+            if(i == 0){    
+                if(buffer[5] == 0x1A){
+            
+                uart1_txwrite(0xAA);
+                uart1_txwrite(0x07);
+                uart1_txwrite(0x02);
+                uart1_txwrite(0x00);
+                uart1_txwrite(0x01);
+                uart1_txwrite(0xB4);
+                }
+            }
         }
 
-        if(buffer[5] == 0x1A){
-            //uart1_txwrite_str("q\n");
-            uart1_txwrite_str("#0\n");
-        }
-        else if(buffer[5] == 0x2B){
-            //uart1_txwrite_str("q\n");
-            uart1_txwrite_str("#1\n");
-        }
+        
+        
         
         
         
