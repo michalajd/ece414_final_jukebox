@@ -1,3 +1,4 @@
+#define _SUPPRESS_PLIB_WARNING 1
 #include "uart1.h"
 #include <inttypes.h>
 #include <plib.h>

@@ -7,6 +7,10 @@
       <itemPath>timer1.h</itemPath>
       <itemPath>uart1.h</itemPath>
       <itemPath>ztimer.h</itemPath>
+      <itemPath>adafruit.h</itemPath>
+      <itemPath>fsm.h</itemPath>
+      <itemPath>rfid.h</itemPath>
+      <itemPath>testmain.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -19,7 +23,13 @@
       <itemPath>testmain.c</itemPath>
       <itemPath>uart1.c</itemPath>
       <itemPath>ztimer.c</itemPath>
+<<<<<<< HEAD
       <itemPath>../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X/timer1.c</itemPath>
+=======
+      <itemPath>fsm.c</itemPath>
+      <itemPath>../JukeBox.X/timer1.c</itemPath>
+      <itemPath>rfid.c</itemPath>
+>>>>>>> 633967ab9dcdaeb2414166d584ea5a3f061696c5
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -30,8 +40,12 @@
   <sourceRootList>
     <Elem>.</Elem>
     <Elem>../ece414_arnold_dennis/LCD_Display.X</Elem>
+<<<<<<< HEAD
     <Elem>../lcd</Elem>
     <Elem>../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X</Elem>
+=======
+    <Elem>../JukeBox.X</Elem>
+>>>>>>> 633967ab9dcdaeb2414166d584ea5a3f061696c5
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -213,6 +227,7 @@
         <property key="wpo-lto" value="false"/>
       </C32Global>
       <PKOBSKDEPlatformTool>
+<<<<<<< HEAD
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
         <property key="ToolFirmwareFilePath"
@@ -267,6 +282,12 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="true"/>
+=======
+        <property key="firmware.download.all" value="false"/>
+      </PKOBSKDEPlatformTool>
+      <Tool>
+        <property key="firmware.download.all" value="false"/>
+>>>>>>> 633967ab9dcdaeb2414166d584ea5a3f061696c5
       </Tool>
     </conf>
   </confs>

@@ -1,1 +1,5 @@
+<<<<<<<< HEAD:JukeBox2.0.X/.generated_files/flags/default/141e3b9727dfa0e4100ea801916c1c07bbf3b1d3
  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\arnolddj\Documents\ece414_final_jukebox\JukeBox2.0.X\uart1.c
+========
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\dennismj\Documents\ece414_final_jukebox\JukeBox.X\timer1.c
+>>>>>>>> 633967ab9dcdaeb2414166d584ea5a3f061696c5:JukeBox2.0.X/.generated_files/flags/default/92f4f165d10905cb7eaa5d9900e1f039567fcbfa
