@@ -24,7 +24,7 @@ uint8_t uart1_txrdy(){
     }
 }
 
-void uart1_txwrite(char c){
+void uart1_txwrite(int c){
     WriteUART1(c);
 }
 void uart1_txwrite_str(char *cp){

@@ -42,12 +42,12 @@ void tag(char temp_buff){
         }
         else if (temp_buff == 0x47){
             
-            uart1_txwrite_str("-\n");
+            //uart1_txwrite_str("-\n");
             
         }
         else if (temp_buff == 0x77){
             
-            uart1_txwrite_str("+\n");
+            //uart1_txwrite_str("+\n");
             
         }
         else if (temp_buff == 0x58){

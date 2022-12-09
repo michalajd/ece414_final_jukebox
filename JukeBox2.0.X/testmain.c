@@ -48,14 +48,32 @@ int main(int argc, char** argv) {
                 //uart1_txwrite(buffer[5]); // uncomment this to see first two hex numbers of tag ID (also comment out all other uart writes)
                 
             }
+                
+            if(i == 0){    
+                if(buffer[5] == 0x1A){
+            
+                uart1_txwrite(0xAA);
+                uart1_txwrite(0x07);
+                uart1_txwrite(0x02);
+                uart1_txwrite(0x00);
+                uart1_txwrite(0x01);
+                uart1_txwrite(0xB4);
+                }
+            }
+        }
+
+        
+        
+
                 //tag_flag = tag_read_bool(); // sets tag flag to 1 while input is reading
         }
+
         
         tag(temp_buff);
         //FSM_tick();
         //tag_flag = 0; // sets tag flag to 0 when there's no input
         
-    } // end of while(1)
+    // end of while(1)
     
     return (EXIT_SUCCESS);
 }
