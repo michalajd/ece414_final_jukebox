@@ -1,0 +1,5 @@
+<<<<<<<< HEAD:JukeBox2.0.X/.generated_files/flags/default/40ab9580d14df593cb317c84d3566cd13f0ab0e0
+ $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\arnolddj\Documents\ece414_final_jukebox\JukeBox2.0.X\ztimer.c
+========
+ $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\dennismj\Documents\ece414_final_jukebox\JukeBox2.0.X\fsm.c
+>>>>>>>> 633967ab9dcdaeb2414166d584ea5a3f061696c5:JukeBox2.0.X/.generated_files/flags/default/d54fd6c0003a7a065a849ddf9f3cb51c3aa2b44f

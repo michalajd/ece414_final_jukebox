@@ -1,0 +1,5 @@
+<<<<<<<< HEAD:JukeBox2.0.X/.generated_files/flags/default/ffef7cfb33f000c543247129110909cfb5c6a32c
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\arnolddj\Documents\ece414_final_jukebox\JukeBox2.0.X\testmain.c
+========
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\dennismj\Documents\ece414_final_jukebox\JukeBox2.0.X\rfid.c
+>>>>>>>> 633967ab9dcdaeb2414166d584ea5a3f061696c5:JukeBox2.0.X/.generated_files/flags/default/a270057b7899fe90eb418ac9faab5211f016e423

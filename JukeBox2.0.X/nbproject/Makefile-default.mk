@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=adafruit.c testmain.c uart1.c ztimer.c fsm.c ../JukeBox.X/timer1.c rfid.c
+SOURCEFILES_QUOTED_IF_SPACED=adafruit.c testmain.c uart1.c ztimer.c ../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X/timer1.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/adafruit.o ${OBJECTDIR}/testmain.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/ztimer.o ${OBJECTDIR}/fsm.o ${OBJECTDIR}/_ext/513522273/timer1.o ${OBJECTDIR}/rfid.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/adafruit.o.d ${OBJECTDIR}/testmain.o.d ${OBJECTDIR}/uart1.o.d ${OBJECTDIR}/ztimer.o.d ${OBJECTDIR}/fsm.o.d ${OBJECTDIR}/_ext/513522273/timer1.o.d ${OBJECTDIR}/rfid.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/adafruit.o ${OBJECTDIR}/testmain.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/ztimer.o ${OBJECTDIR}/_ext/365379574/timer1.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/adafruit.o.d ${OBJECTDIR}/testmain.o.d ${OBJECTDIR}/uart1.o.d ${OBJECTDIR}/ztimer.o.d ${OBJECTDIR}/_ext/365379574/timer1.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/adafruit.o ${OBJECTDIR}/testmain.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/ztimer.o ${OBJECTDIR}/fsm.o ${OBJECTDIR}/_ext/513522273/timer1.o ${OBJECTDIR}/rfid.o
+OBJECTFILES=${OBJECTDIR}/adafruit.o ${OBJECTDIR}/testmain.o ${OBJECTDIR}/uart1.o ${OBJECTDIR}/ztimer.o ${OBJECTDIR}/_ext/365379574/timer1.o
 
 # Source Files
-SOURCEFILES=adafruit.c testmain.c uart1.c ztimer.c fsm.c ../JukeBox.X/timer1.c rfid.c
+SOURCEFILES=adafruit.c testmain.c uart1.c ztimer.c ../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X/timer1.c
 
 
 
@@ -107,90 +107,66 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/adafruit.o: adafruit.c  .generated_files/flags/default/5888c7eda630964f9650e6f054dfd4e6ea8eb825 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/adafruit.o: adafruit.c  .generated_files/flags/default/51ac2dd5d6b55d692f6392b4950e9f5b6eb1b1ef .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/adafruit.o.d 
 	@${RM} ${OBJECTDIR}/adafruit.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/adafruit.o.d" -o ${OBJECTDIR}/adafruit.o adafruit.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/testmain.o: testmain.c  .generated_files/flags/default/527496bac3c60dafa00294eab7238aab8884edd1 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/testmain.o: testmain.c  .generated_files/flags/default/1fa167d08f215680ad8d03f70c07e0314db5fa5e .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/testmain.o.d 
 	@${RM} ${OBJECTDIR}/testmain.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/testmain.o.d" -o ${OBJECTDIR}/testmain.o testmain.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/uart1.o: uart1.c  .generated_files/flags/default/5372e6629e2d2909c468b52181ef45540aff4b89 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/uart1.o: uart1.c  .generated_files/flags/default/16028acf47e4d5796f046f73cf26f70aa1b2f666 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/uart1.o.d 
 	@${RM} ${OBJECTDIR}/uart1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/uart1.o.d" -o ${OBJECTDIR}/uart1.o uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/ztimer.o: ztimer.c  .generated_files/flags/default/e423232c83f84b413ab9da0e5630e58871441d7e .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/ztimer.o: ztimer.c  .generated_files/flags/default/40ab9580d14df593cb317c84d3566cd13f0ab0e0 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/ztimer.o.d 
 	@${RM} ${OBJECTDIR}/ztimer.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/ztimer.o.d" -o ${OBJECTDIR}/ztimer.o ztimer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/fsm.o: fsm.c  .generated_files/flags/default/d54fd6c0003a7a065a849ddf9f3cb51c3aa2b44f .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/fsm.o.d 
-	@${RM} ${OBJECTDIR}/fsm.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/fsm.o.d" -o ${OBJECTDIR}/fsm.o fsm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/513522273/timer1.o: ../JukeBox.X/timer1.c  .generated_files/flags/default/9cb7bc0a8ef4fcc935abd2d1a5f113fca2634f1d .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}/_ext/513522273" 
-	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o.d 
-	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/513522273/timer1.o.d" -o ${OBJECTDIR}/_ext/513522273/timer1.o ../JukeBox.X/timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/rfid.o: rfid.c  .generated_files/flags/default/d69abca91cfbe1e30c4bb32a5a58363b581ef789 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/rfid.o.d 
-	@${RM} ${OBJECTDIR}/rfid.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/rfid.o.d" -o ${OBJECTDIR}/rfid.o rfid.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+${OBJECTDIR}/_ext/365379574/timer1.o: ../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X/timer1.c  .generated_files/flags/default/ccc9c48fd3948554e4eeb0f1264dc5bc7c3f3706 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+	@${MKDIR} "${OBJECTDIR}/_ext/365379574" 
+	@${RM} ${OBJECTDIR}/_ext/365379574/timer1.o.d 
+	@${RM} ${OBJECTDIR}/_ext/365379574/timer1.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/365379574/timer1.o.d" -o ${OBJECTDIR}/_ext/365379574/timer1.o ../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X/timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
 else
-${OBJECTDIR}/adafruit.o: adafruit.c  .generated_files/flags/default/c7324b2f3cf23cf63ea9264433b10d50e33d3eea .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/adafruit.o: adafruit.c  .generated_files/flags/default/11988a6957b3385c3b1857e1aa04aa67fd98f50f .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/adafruit.o.d 
 	@${RM} ${OBJECTDIR}/adafruit.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/adafruit.o.d" -o ${OBJECTDIR}/adafruit.o adafruit.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/testmain.o: testmain.c  .generated_files/flags/default/a4d1be350055030be59e4ae7227755694257ed2e .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/testmain.o: testmain.c  .generated_files/flags/default/ffef7cfb33f000c543247129110909cfb5c6a32c .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/testmain.o.d 
 	@${RM} ${OBJECTDIR}/testmain.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/testmain.o.d" -o ${OBJECTDIR}/testmain.o testmain.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/uart1.o: uart1.c  .generated_files/flags/default/95805987be448e2557beca0c84e5529249066aa7 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/uart1.o: uart1.c  .generated_files/flags/default/141e3b9727dfa0e4100ea801916c1c07bbf3b1d3 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/uart1.o.d 
 	@${RM} ${OBJECTDIR}/uart1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/uart1.o.d" -o ${OBJECTDIR}/uart1.o uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/ztimer.o: ztimer.c  .generated_files/flags/default/cd4991f92add0271faf69e531c7bffaaf9baf944 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/ztimer.o: ztimer.c  .generated_files/flags/default/e798acafb0cb035bb1f20d3eba72ce80adfc6da .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/ztimer.o.d 
 	@${RM} ${OBJECTDIR}/ztimer.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/ztimer.o.d" -o ${OBJECTDIR}/ztimer.o ztimer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/fsm.o: fsm.c  .generated_files/flags/default/e756d4f297cd6e1596362320e1e397d1670902cd .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/fsm.o.d 
-	@${RM} ${OBJECTDIR}/fsm.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/fsm.o.d" -o ${OBJECTDIR}/fsm.o fsm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/513522273/timer1.o: ../JukeBox.X/timer1.c  .generated_files/flags/default/92f4f165d10905cb7eaa5d9900e1f039567fcbfa .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}/_ext/513522273" 
-	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o.d 
-	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/513522273/timer1.o.d" -o ${OBJECTDIR}/_ext/513522273/timer1.o ../JukeBox.X/timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/rfid.o: rfid.c  .generated_files/flags/default/a270057b7899fe90eb418ac9faab5211f016e423 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/rfid.o.d 
-	@${RM} ${OBJECTDIR}/rfid.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/rfid.o.d" -o ${OBJECTDIR}/rfid.o rfid.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+${OBJECTDIR}/_ext/365379574/timer1.o: ../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X/timer1.c  .generated_files/flags/default/9e16d45a48a76790611e0e96309568cd676d8495 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+	@${MKDIR} "${OBJECTDIR}/_ext/365379574" 
+	@${RM} ${OBJECTDIR}/_ext/365379574/timer1.o.d 
+	@${RM} ${OBJECTDIR}/_ext/365379574/timer1.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/365379574/timer1.o.d" -o ${OBJECTDIR}/_ext/365379574/timer1.o ../../ECE414_Labs/ece414_arnold_dennis/LCD_Display.X/timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
 endif
 
