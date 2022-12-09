@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
     while(1){
         
         while(uart1_rxrdy()){
-            uart1_txwrite_str("q\n");
+          //  uart1_txwrite_str("q\n");
                 //if(portb7_in_read() != 0) volumedown();
                 //if(portb8_in_read() != 0) volumeup();
             
@@ -45,19 +45,19 @@ int main(int argc, char** argv) {
             if (i>9) {
                 i = 0;
                 temp_buff = buffer[5]; // temp char to store tag ID for tag())
-                //uart1_txwrite(buffer[5]); // uncomment this to see first two hex numbers of tag ID (also comment out all other uart writes)
-                
+                uart1_txwrite(buffer[5]); // uncomment this to see first two hex numbers of tag ID (also comment out all other uart writes)
+                uart1_txwrite(buffer[6]);
             }
                 
             if(i == 0){    
                 if(buffer[5] == 0x1A){
             
-                uart1_txwrite(0xAA);
-                uart1_txwrite(0x07);
-                uart1_txwrite(0x02);
-                uart1_txwrite(0x00);
-                uart1_txwrite(0x01);
-                uart1_txwrite(0xB4);
+               // uart1_txwrite(0xAA);
+                //uart1_txwrite(0x07);
+               // uart1_txwrite(0x02);
+                //uart1_txwrite(0x00);
+               /// uart1_txwrite(0x01);
+               // uart1_txwrite(0xB4);
                 }
             }
         }
