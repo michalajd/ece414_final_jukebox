@@ -107,74 +107,74 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/328982905/adafruit.o: ../JukeBox2.0.X/adafruit.c  .generated_files/flags/default/5888c7eda630964f9650e6f054dfd4e6ea8eb825 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/adafruit.o: ../JukeBox2.0.X/adafruit.c  .generated_files/flags/default/51ac2dd5d6b55d692f6392b4950e9f5b6eb1b1ef .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/adafruit.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/adafruit.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/adafruit.o.d" -o ${OBJECTDIR}/_ext/328982905/adafruit.o ../JukeBox2.0.X/adafruit.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/fsm.o: ../JukeBox2.0.X/fsm.c  .generated_files/flags/default/d54fd6c0003a7a065a849ddf9f3cb51c3aa2b44f .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/fsm.o: ../JukeBox2.0.X/fsm.c  .generated_files/flags/default/17cfd1e8e4ce7ff6a87e45e974420f50bd65d2c6 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/fsm.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/fsm.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/fsm.o.d" -o ${OBJECTDIR}/_ext/328982905/fsm.o ../JukeBox2.0.X/fsm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/rfid.o: ../JukeBox2.0.X/rfid.c  .generated_files/flags/default/d69abca91cfbe1e30c4bb32a5a58363b581ef789 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/rfid.o: ../JukeBox2.0.X/rfid.c  .generated_files/flags/default/2c4d781c11ef564f8147dc96d50af68ae436cd20 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/rfid.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/rfid.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/rfid.o.d" -o ${OBJECTDIR}/_ext/328982905/rfid.o ../JukeBox2.0.X/rfid.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/testmain.o: ../JukeBox2.0.X/testmain.c  .generated_files/flags/default/527496bac3c60dafa00294eab7238aab8884edd1 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/testmain.o: ../JukeBox2.0.X/testmain.c  .generated_files/flags/default/1fa167d08f215680ad8d03f70c07e0314db5fa5e .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/testmain.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/testmain.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/testmain.o.d" -o ${OBJECTDIR}/_ext/328982905/testmain.o ../JukeBox2.0.X/testmain.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/uart1.o: ../JukeBox2.0.X/uart1.c  .generated_files/flags/default/5372e6629e2d2909c468b52181ef45540aff4b89 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/uart1.o: ../JukeBox2.0.X/uart1.c  .generated_files/flags/default/16028acf47e4d5796f046f73cf26f70aa1b2f666 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/uart1.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/uart1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/uart1.o.d" -o ${OBJECTDIR}/_ext/328982905/uart1.o ../JukeBox2.0.X/uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/513522273/timer1.o: ../JukeBox.X/timer1.c  .generated_files/flags/default/9cb7bc0a8ef4fcc935abd2d1a5f113fca2634f1d .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/513522273/timer1.o: ../JukeBox.X/timer1.c  .generated_files/flags/default/a608e50348acb9f24ab99e3c6b8d22542d2da711 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/513522273" 
 	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o.d 
 	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/513522273/timer1.o.d" -o ${OBJECTDIR}/_ext/513522273/timer1.o ../JukeBox.X/timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
 else
-${OBJECTDIR}/_ext/328982905/adafruit.o: ../JukeBox2.0.X/adafruit.c  .generated_files/flags/default/c7324b2f3cf23cf63ea9264433b10d50e33d3eea .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/adafruit.o: ../JukeBox2.0.X/adafruit.c  .generated_files/flags/default/11988a6957b3385c3b1857e1aa04aa67fd98f50f .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/adafruit.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/adafruit.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/adafruit.o.d" -o ${OBJECTDIR}/_ext/328982905/adafruit.o ../JukeBox2.0.X/adafruit.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/fsm.o: ../JukeBox2.0.X/fsm.c  .generated_files/flags/default/e756d4f297cd6e1596362320e1e397d1670902cd .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/fsm.o: ../JukeBox2.0.X/fsm.c  .generated_files/flags/default/4f40315301ab1204d9a5048b3d3060ccdb893ff6 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/fsm.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/fsm.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/fsm.o.d" -o ${OBJECTDIR}/_ext/328982905/fsm.o ../JukeBox2.0.X/fsm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/rfid.o: ../JukeBox2.0.X/rfid.c  .generated_files/flags/default/a270057b7899fe90eb418ac9faab5211f016e423 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/rfid.o: ../JukeBox2.0.X/rfid.c  .generated_files/flags/default/1960b5e73fcfc3d22e41ec4301f421859bb92c8c .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/rfid.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/rfid.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/rfid.o.d" -o ${OBJECTDIR}/_ext/328982905/rfid.o ../JukeBox2.0.X/rfid.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/testmain.o: ../JukeBox2.0.X/testmain.c  .generated_files/flags/default/a4d1be350055030be59e4ae7227755694257ed2e .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/testmain.o: ../JukeBox2.0.X/testmain.c  .generated_files/flags/default/ffef7cfb33f000c543247129110909cfb5c6a32c .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/testmain.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/testmain.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/testmain.o.d" -o ${OBJECTDIR}/_ext/328982905/testmain.o ../JukeBox2.0.X/testmain.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/328982905/uart1.o: ../JukeBox2.0.X/uart1.c  .generated_files/flags/default/95805987be448e2557beca0c84e5529249066aa7 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/328982905/uart1.o: ../JukeBox2.0.X/uart1.c  .generated_files/flags/default/141e3b9727dfa0e4100ea801916c1c07bbf3b1d3 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/328982905" 
 	@${RM} ${OBJECTDIR}/_ext/328982905/uart1.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328982905/uart1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/328982905/uart1.o.d" -o ${OBJECTDIR}/_ext/328982905/uart1.o ../JukeBox2.0.X/uart1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/513522273/timer1.o: ../JukeBox.X/timer1.c  .generated_files/flags/default/92f4f165d10905cb7eaa5d9900e1f039567fcbfa .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
+${OBJECTDIR}/_ext/513522273/timer1.o: ../JukeBox.X/timer1.c  .generated_files/flags/default/e4301760e7bdf2146489e7625099a189ac551427 .generated_files/flags/default/fa77e48c5d6b209b0dbc904325b3870195f7a677
 	@${MKDIR} "${OBJECTDIR}/_ext/513522273" 
 	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o.d 
 	@${RM} ${OBJECTDIR}/_ext/513522273/timer1.o 

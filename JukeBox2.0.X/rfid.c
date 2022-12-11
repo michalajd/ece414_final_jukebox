@@ -8,10 +8,52 @@
 #include "timer1.h"
 #include "uart1.h"
 #include "rfid.h"
+#include "string.h"
 
 #define _SUPPRESS_PLIB_WARNING 1
 
 int pause_playCount;
+
+int concat_int(int a, int b){
+    
+    int c = (a << 8)|(b); // concats 2 hexadecimal numbers
+    return c;
+    
+}
+
+void readTag(){
+    
+    switch (num){
+        case 0x5A12:
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x01);
+            uart1_txwrite(0xB4);
+            break;
+            
+        case 0x1AE9:
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0xB5);
+            break;
+            
+        case 0x5853:
+            uart1_txwrite(0xAA);
+               uart1_txwrite(0x07);
+               uart1_txwrite(0x02);
+               uart1_txwrite(0x00);
+               uart1_txwrite(0x03);
+               uart1_txwrite(0xB6);
+            break;
+                
+    }
+    
+}
 
 uint8_t tag_read_bool() {
     return 1;

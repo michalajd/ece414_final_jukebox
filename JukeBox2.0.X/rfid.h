@@ -20,6 +20,10 @@
 
 // idk if these are how it is formatted but ideas for rfid functions we can use in FSM
 
+int concat_int();
+
+void readTag();
+
 extern uint8_t tag_read_bool();
 
 void tag(char temp_buff);
