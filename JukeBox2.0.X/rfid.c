@@ -25,18 +25,12 @@ void readTag(int num){
     
     switch (num){
         case 0x5A12:
-           /* uart1_txwrite(0xAA);
-            uart1_txwrite(0x07);
-            uart1_txwrite(0x02);
-            uart1_txwrite(0x00);
-            uart1_txwrite(0x01);
-            uart1_txwrite(0xB4); */
             uart1_txwrite(0xAA);
             uart1_txwrite(0x07);
             uart1_txwrite(0x02);
             uart1_txwrite(0x00);
-            uart1_txwrite(0x15);
-            uart1_txwrite(0xC8);
+            uart1_txwrite(0x01);
+            uart1_txwrite(0xB4);
             break;
             
         case 0x1AE9:
@@ -211,231 +205,516 @@ void readTag(int num){
             break;
             
             case 0x2B0A:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x15);
+            uart1_txwrite(0xC8);
             break;
             
             case 0x8383:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x16);
+            uart1_txwrite(0xC9);
             break;
             
             case 0x5ADB:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x17);
+            uart1_txwrite(0xCA);
             break;
             
             case 0x25F0:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x18);
+            uart1_txwrite(0xCB);
             break;
             
             case 0x5668:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x19);
+            uart1_txwrite(0xCC);
             break;
             
             case 0x4E0B:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x1A);
+            uart1_txwrite(0xCD);
             break;
             
             case 0x255B:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x1B);
+            uart1_txwrite(0xCE);
             break;
             
             case 0x458F:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x1C);
+            uart1_txwrite(0xCF);
             break;
             
             case 0x83F2: 
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x1D);
+            uart1_txwrite(0xD0);
             break;
             
             case 0x5B2F: // 30
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x1E);
+            uart1_txwrite(0xD1);
             break;
             
             case 0x56D7:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x1F);
+            uart1_txwrite(0xD2);
             break;
             
             case 0x2A86:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x20);
+            uart1_txwrite(0xD3);
             break;
             
             case 0x84B5:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x21);
+            uart1_txwrite(0xD4);
             break;
             
             case 0x470F:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x22);
+            uart1_txwrite(0xD5);
             break;
             
             case 0x28C6:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x23);
+            uart1_txwrite(0xD6);
             break;
             
             case 0x225B:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x24);
+            uart1_txwrite(0xD7);
             break;
             
             case 0x2236:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x25);
+            uart1_txwrite(0xD8);
             break;
             
             case 0x5D91:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x26);
+            uart1_txwrite(0xD9);
             break;
             
             case 0x5B24:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x27);
+            uart1_txwrite(0xDA);
             break;
             
             case 0x8368: // 40
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x28);
+            uart1_txwrite(0xDB);
             break;
             
             case 0x773E:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x29);
+            uart1_txwrite(0xDC);
             break;
             
             case 0x3650:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x2A);
+            uart1_txwrite(0xDD);
             break;
             
             case 0x4824:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x2B);
+            uart1_txwrite(0xDE);
             break;
             
             case 0x1BB7:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x2C);
+            uart1_txwrite(0xDF);
             break;
             
             case 0x59C3:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x2D);
+            uart1_txwrite(0xE0);
             break;
             
             case 0x57BF:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x2E);
+            uart1_txwrite(0xE1);
             break;
             
             case 0x57DA:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x2F);
+            uart1_txwrite(0xE2);
             break;
             
             case 0x5870:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x30);
+            uart1_txwrite(0xE3);
             break;
             
             case 0x5732:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x31);
+            uart1_txwrite(0xE4);
             break;
             
             case 0x2AC7: // 50
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x32);
+            uart1_txwrite(0xE5);
             break;
             
             case 0x2560:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x33);
+            uart1_txwrite(0xE6);
             break;
             
             case 0x5ECB:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x34);
+            uart1_txwrite(0xE7);
             break;
             
             case 0x4DD2:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x35);
+            uart1_txwrite(0xE8);
             break;
             
             case 0x5CFE:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x36);
+            uart1_txwrite(0xE9);
             break;
             
             case 0x5B05:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x37);
+            uart1_txwrite(0xEA);
             break;
             
             case 0x36A9:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x38);
+            uart1_txwrite(0xEB);
             break;
             
             case 0x2AD5:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x39);
+            uart1_txwrite(0xEC);
             break;
             
             case 0x65EF:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x3A);
+            uart1_txwrite(0xED);
             break;
             
             case 0x2886:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x3B);
+            uart1_txwrite(0xEE);
             break;
             
             case 0x2219: // 60
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x3C);
+            uart1_txwrite(0xEF);
             break;
             
             case 0x44A7:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x3D);
+            uart1_txwrite(0xF0);
             break;
             
             case 0x47B2:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x3E);
+            uart1_txwrite(0xF1);
             break;
             
             case 0x58AF:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x3F);
+            uart1_txwrite(0xF2);
             break;
             
             case 0x32FE:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x40);
+            uart1_txwrite(0xF3);
             break;
             
             case 0x5B91:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x41);
+            uart1_txwrite(0xF4);
             break;
             
             case 0x2A67:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x42);
+            uart1_txwrite(0xF5);
             break;
             
             case 0x218A:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x43);
+            uart1_txwrite(0xF6);
             break;
             
             case 0x330E:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x44);
+            uart1_txwrite(0xF7);
             break;
             
             case 0x2A9F:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x45);
+            uart1_txwrite(0xF8);
             break;
             
             case 0x826A: // 70
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x46);
+            uart1_txwrite(0xF9);
             break;
             
             case 0x57E3:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x47);
+            uart1_txwrite(0xFA);
             break;
             
             case 0x5AFE:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x48);
+            uart1_txwrite(0xFB);
             break;
             
             case 0x462E:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x49);
+            uart1_txwrite(0xFC);
             break;
             
             case 0x5B09:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x4A);
+            uart1_txwrite(0xFD);
             break;
             
             case 0x2ADD:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x4B);
+            uart1_txwrite(0xFE);
             break;
             
             case 0x2552:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x4C);
+            uart1_txwrite(0xFF);
             break;
             
-            case 0x8365:
-            
+            case 0x8365: // 77
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x4D);
+            uart1_txwrite(0x100);
             break;
             
             case 0x7593:
