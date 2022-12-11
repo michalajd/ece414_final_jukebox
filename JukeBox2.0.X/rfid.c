@@ -25,12 +25,18 @@ void readTag(int num){
     
     switch (num){
         case 0x5A12:
-            uart1_txwrite(0xAA);
+           /* uart1_txwrite(0xAA);
             uart1_txwrite(0x07);
             uart1_txwrite(0x02);
             uart1_txwrite(0x00);
             uart1_txwrite(0x01);
-            uart1_txwrite(0xB4);
+            uart1_txwrite(0xB4); */
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x15);
+            uart1_txwrite(0xC8);
             break;
             
         case 0x1AE9:

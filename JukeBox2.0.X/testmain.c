@@ -39,9 +39,6 @@ int main() {
 
             if (i > 9) {
                 i = 0;
-                //temp_buff = buffer[5]; // temp char to store tag ID for tag())
-                //uart1_txwrite(buffer[5]); // uncomment this to see first two hex numbers of tag ID (also comment out all other uart writes)
-                //uart1_txwrite(buffer[6]);
                 
                 num = concat_int(buffer[5], buffer[6]); 
             
@@ -49,7 +46,7 @@ int main() {
               
             }
         }
-                //tag_flag = tag_read_bool(); // sets tag flag to 1 while input is reading
+                
         
     } //end of while(1)
         
