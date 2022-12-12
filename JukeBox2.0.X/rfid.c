@@ -723,78 +723,175 @@ void readTag(int num){
             break;
             
             case 0x7593:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x4E);
+            uart1_txwrite(0x101);
             break;
             
             case 0x4E42: 
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x4F);
+            uart1_txwrite(0x102);
             break;
             
             case 0x4D80: // 80
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x50);
+            uart1_txwrite(0x103);
             break;
             
             case 0x56F6:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x51);
+            uart1_txwrite(0x104);
             break;
             
             case 0x463A:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x52);
+            uart1_txwrite(0x105);
             break;
             
             case 0x6AFE:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x53);
+            uart1_txwrite(0x106);
             break;
             
             case 0x2617:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x54);
+            uart1_txwrite(0x107);
             break;
             
             case 0x4E5F:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x55);
+            uart1_txwrite(0x108);
             break;
             
             case 0x5ABA:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x56);
+            uart1_txwrite(0x109);
             break;
             
             case 0x2F9E:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x57);
+            uart1_txwrite(0x10A);
             break;
             
             case 0x4B76:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x58);
+            uart1_txwrite(0x10B);
             break;
             
             case 0x831C:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x59);
+            uart1_txwrite(0x10C);
             break;
             
-            case 0x4DF3:
-            
+            case 0x4DF3: // 90
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x5A);
+            uart1_txwrite(0x10D);
             break;
             
             case 0x57F5:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x5B);
+            uart1_txwrite(0x10E);
             break;
             
             case 0x5CF8:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x5C);
+            uart1_txwrite(0x10F);
             break;
             
             case 0x5B8A:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x5D);
+            uart1_txwrite(0x110);
             break;
             
             case 0xAE1B:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x5E);
+            uart1_txwrite(0x111);
             break;
             
             case 0x4648:
-            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x5F);
+            uart1_txwrite(0x112);
             break;
             
         default:
+            
+            uart1_txwrite(0xAA);
+            uart1_txwrite(0x07);
+            uart1_txwrite(0x02);
+            uart1_txwrite(0x00);
+            uart1_txwrite(0x05);
+            uart1_txwrite(0xB8);
             songName = "Never Gonna Give You Up";
             artist = "Rick Astley";
             
