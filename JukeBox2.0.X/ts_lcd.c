@@ -10,7 +10,7 @@
 
 uint32_t x_mult, y_mult;
 char message[30];
-const int screenL = 320;
+const int screenL = 250;
 
 
 
@@ -59,7 +59,8 @@ void displaySong(char* song){
 
     // track title
     tft_setTextSize(2);
-    tft_setCursor((screenL/2)-(strlen(song)/2),108);
+    int x = (screenL/2)- ((screenL/51.3)*strlen(song));
+    tft_setCursor(x,108);
     tft_writeString(song);
 
 }
@@ -69,7 +70,8 @@ void displayArtist(char* artist){
     tft_setTextColor(ILI9341_WHITE);
     // artist name
     tft_setTextSize(1);
-    tft_setCursor((screenL/2)-(strlen(artist)/2),138);
+    int x = (screenL/2) - ((screenL/90)*strlen(artist));
+    tft_setCursor(x,138);
     tft_writeString(artist);
 
     // default = play button
@@ -81,6 +83,6 @@ void ts_lcd_init(){
     tft_begin();
     tft_setRotation(3); 
     tft_fillScreen(ILI9341_BLACK);  
-    displaySong("September");    
-    displayArtist("Devin Arnold");
+    displaySong("The Less I Know the Better");    
+    displayArtist("Tears for Fears");
 }
