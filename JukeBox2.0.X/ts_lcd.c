@@ -10,6 +10,7 @@
 
 uint32_t x_mult, y_mult;
 char message[30];
+const int screenL = 320;
 
 
 
@@ -52,19 +53,24 @@ char message[30];
         else return 0; 
 } */
 
-void display(){
+void displaySong(char* song){
     // note: doing this without LCD so spacing is approximate
     tft_setTextColor(ILI9341_WHITE);
 
     // track title
-    tft_setTextSize(4);
-    tft_setCursor(50,108);
-    tft_writeString("No song currently playing");
-
-    // artist name
     tft_setTextSize(2);
-    tft_setCursor(50,138);
-    tft_writeString("Scan RFID tag to get started");
+    tft_setCursor((screenL/2)-(strlen(song)/2),108);
+    tft_writeString(song);
+
+}
+
+void displayArtist(char* artist){
+    
+    tft_setTextColor(ILI9341_WHITE);
+    // artist name
+    tft_setTextSize(1);
+    tft_setCursor((screenL/2)-(strlen(artist)/2),138);
+    tft_writeString(artist);
 
     // default = play button
     tft_fillTriangle(100, 200, 100, 160, 120, 180, ILI9341_WHITE);
@@ -75,5 +81,6 @@ void ts_lcd_init(){
     tft_begin();
     tft_setRotation(3); 
     tft_fillScreen(ILI9341_BLACK);  
-    display();    
+    displaySong("September");    
+    displayArtist("Devin Arnold");
 }

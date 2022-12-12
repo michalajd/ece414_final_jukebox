@@ -12,6 +12,7 @@
 #include "rfid.h"
 #include "fsm.h"
 #include <string.h>
+#include "ts_lcd.h"
 
 /* Clock configuration */
 #pragma config FNOSC = FRCPLL, POSCMOD = OFF
@@ -31,6 +32,7 @@ char* art;
 
 int main() {
     uart1_init(9600);
+    ts_lcd_init();
     
     while(1){
         
