@@ -10,6 +10,12 @@
       <itemPath>../JukeBox2.0.X/testmain.h</itemPath>
       <itemPath>../JukeBox2.0.X/timer1.h</itemPath>
       <itemPath>../JukeBox2.0.X/uart1.h</itemPath>
+      <itemPath>../JukeBox2.0.X/adc_intf.h</itemPath>
+      <itemPath>../JukeBox2.0.X/pin_magic.h</itemPath>
+      <itemPath>../JukeBox2.0.X/registers.h</itemPath>
+      <itemPath>../JukeBox2.0.X/tft_gfx.h</itemPath>
+      <itemPath>../JukeBox2.0.X/tft_master.h</itemPath>
+      <itemPath>../JukeBox2.0.X/ts_lcd.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -24,6 +30,11 @@
       <itemPath>../JukeBox2.0.X/testmain.c</itemPath>
       <itemPath>../JukeBox2.0.X/uart1.c</itemPath>
       <itemPath>../JukeBox.X/timer1.c</itemPath>
+      <itemPath>../JukeBox2.0.X/adc_intf.c</itemPath>
+      <itemPath>../JukeBox2.0.X/glcdfont.c</itemPath>
+      <itemPath>../JukeBox2.0.X/tft_gfx.c</itemPath>
+      <itemPath>../JukeBox2.0.X/tft_master.c</itemPath>
+      <itemPath>../JukeBox2.0.X/ts_lcd.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

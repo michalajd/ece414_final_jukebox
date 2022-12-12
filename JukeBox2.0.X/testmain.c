@@ -26,6 +26,9 @@ int buffer[RX_BUFFER];
 uint8_t i = 0;
 int num; // concatenated hex number
 
+char* name;
+char* art;
+
 int main() {
     uart1_init(9600);
     
@@ -43,6 +46,11 @@ int main() {
                 num = concat_int(buffer[5], buffer[6]); 
             
                 readTag(num); // switch statement that checks each tag ID
+                name = retName();
+                art = artName();
+                uart1_txwrite_str(name);
+                uart1_txwrite_str("\n");
+                uart1_txwrite_str(art);
               
             }
         }

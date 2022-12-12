@@ -13,6 +13,8 @@
 #define _SUPPRESS_PLIB_WARNING 1
 
 int pause_playCount;
+char* songName;
+char* artist;
 
 int concat_int(int a, int b){
     
@@ -31,6 +33,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x01);
             uart1_txwrite(0xB4);
+            
+            songName = "September";
+            artist = "Earth, Wind, and Fire";
             break;
             
         case 0x1AE9:
@@ -790,13 +795,21 @@ void readTag(int num){
             break;
             
         default:
-            
+            songName = "Never Gonna Give You Up";
+            artist = "Rick Astley";
             
             
             break;
             
     }
     
+}
+const char* retName(){
+    return songName;
+}
+
+const char* artName() {
+    return artist;
 }
 
 uint8_t tag_read_bool() {

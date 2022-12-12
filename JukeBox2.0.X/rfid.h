@@ -22,6 +22,10 @@
 
 int concat_int();
 
+const char* retName();
+
+const char* artName();
+
 void readTag();
 
 extern uint8_t tag_read_bool();
