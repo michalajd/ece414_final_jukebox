@@ -3,8 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/arnolddj/Documents/ece414_final_jukebox/JukeBox2.0.X/rfid.c</file>
-            <file>file:/C:/Users/arnolddj/Documents/ece414_final_jukebox/JukeBox2.0.X/testmain.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/tft_gfx.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/fsm.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/glcdfont.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/glcdfont.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/tft_master.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/rfid.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/rfid.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/tft_master.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/uart1.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/ts_lcd.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/registers.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/testmain.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/ts_lcd.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/testmain.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/fsm.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/adc_intf.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/pin_magic.h</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/tft_gfx.c</file>
+            <file>file:/C:/Users/dennismj/Documents/ece414_final_jukebox/JukeBox2.0.X/adc_intf.c</file>
         </group>
     </open-files>
 </project-private>
