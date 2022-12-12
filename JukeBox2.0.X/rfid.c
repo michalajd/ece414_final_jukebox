@@ -681,6 +681,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x37);
             uart1_txwrite(0xEA);
+            
+            songName = "Lady Madonna";
+            artist = "The Beatles";
             break;
             
             case 0x36A9:
@@ -690,6 +693,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x38);
             uart1_txwrite(0xEB);
+            
+            songName = "For Whom the Bell Tolls";
+            artist = "Iron Maiden";
             break;
             
             case 0x2AD5:
@@ -699,6 +705,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x39);
             uart1_txwrite(0xEC);
+            
+            songName = "The Trooper";
+            artist = "Iron Maiden";
             break;
             
             case 0x65EF:
@@ -708,6 +717,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x3A);
             uart1_txwrite(0xED);
+            
+            songName = "Sell Out";
+            artist = "Reel Big Fish";
             break;
             
             case 0x2886:
@@ -717,6 +729,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x3B);
             uart1_txwrite(0xEE);
+            
+            songName = "Take On Me";
+            artist = "a-Ha";
             break;
             
             case 0x2219: // 60
@@ -726,6 +741,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x3C);
             uart1_txwrite(0xEF);
+            
+            songName = "Linus and Lucy";
+            artist = "Vince Guaraldi Trio";
             break;
             
             case 0x44A7:
@@ -735,6 +753,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x3D);
             uart1_txwrite(0xF0);
+            
+            songName = "Skating";
+            artist = "Vince Guaraldi Trio";
             break;
             
             case 0x47B2:
@@ -744,6 +765,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x3E);
             uart1_txwrite(0xF1);
+            
+            songName = "Last Christmas";
+            artist = "Wham!";
             break;
             
             case 0x58AF:
@@ -753,6 +777,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x3F);
             uart1_txwrite(0xF2);
+            
+            songName = "Danger Zone";
+            artist = "Kenny Loggins";
             break;
             
             case 0x32FE:
@@ -762,6 +789,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x40);
             uart1_txwrite(0xF3);
+            
+            songName = "Synchronicity II";
+            artist = "The Police";
             break;
             
             case 0x5B91:
@@ -771,6 +801,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x41);
             uart1_txwrite(0xF4);
+            
+            songName = "Roxanne";
+            artist = "The Police";
             break;
             
             case 0x2A67:
@@ -780,6 +813,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x42);
             uart1_txwrite(0xF5);
+            
+            songName = "Pinball Wizard";
+            artist = "The Who";
             break;
             
             case 0x218A:
@@ -789,6 +825,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x43);
             uart1_txwrite(0xF6);
+            
+            songName = "Have Yourself a Merry Little Christmas";
+            artist = "Chris Botti";
             break;
             
             case 0x330E:
@@ -798,6 +837,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x44);
             uart1_txwrite(0xF7);
+            
+            songName = "Secunda";
+            artist = "Jeremy Soule";
             break;
             
             case 0x2A9F:
@@ -807,6 +849,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x45);
             uart1_txwrite(0xF8);
+            
+            songName = "Cbat";
+            artist = "Hudson Mohawke";
             break;
             
             case 0x826A: // 70
@@ -816,6 +861,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x46);
             uart1_txwrite(0xF9);
+            
+            songName = "Happy";
+            artist = "Pharell Williams";
             break;
             
             case 0x57E3:
@@ -825,6 +873,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x47);
             uart1_txwrite(0xFA);
+            
+            songName = "Army Strong";
+            artist = "US Army Field Band";
             break;
             
             case 0x5AFE:
@@ -834,6 +885,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x48);
             uart1_txwrite(0xFB);
+            
+            songName = "Better Call Saul Theme";
+            artist = "Little Barrie";
             break;
             
             case 0x462E:
@@ -843,6 +897,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x49);
             uart1_txwrite(0xFC);
+            
+            songName = "YMCA";
+            artist = "The Village People";
             break;
             
             case 0x5B09:
@@ -852,6 +909,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x4A);
             uart1_txwrite(0xFD);
+            
+            songName = "Follow Me Like the Moon";
+            artist = "Sammy Rae and the Friends";
             break;
             
             case 0x2ADD:
@@ -861,6 +921,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x4B);
             uart1_txwrite(0xFE);
+            
+            songName = "Flesh and Bone";
+            artist = "Sammy Rae and the Friends";
             break;
             
             case 0x2552:
@@ -870,6 +933,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x4C);
             uart1_txwrite(0xFF);
+            
+            songName = "Pedro";
+            artist = "Ripe";
             break;
             
             case 0x8365: // 77
@@ -879,6 +945,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x4D);
             uart1_txwrite(0x100);
+            
+            songName = "All I Want for Christmas is You";
+            artist = "Mariah Carey";
             break;
             
             case 0x7593:
@@ -888,6 +957,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x4E);
             uart1_txwrite(0x101);
+            
+            songName = "Party in the USA";
+            artist = "Miley Cyrus";
             break;
             
             case 0x4E42: 
@@ -897,6 +969,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x4F);
             uart1_txwrite(0x102);
+            
+            songName = "Hotrod";
+            artist = "Dayglow";
             break;
             
             case 0x4D80: // 80
@@ -906,6 +981,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x50);
             uart1_txwrite(0x103);
+            
+            songName = "God Only Knows";
+            artist = "The Beach Boys";
             break;
             
             case 0x56F6:
@@ -915,6 +993,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x51);
             uart1_txwrite(0x104);
+            
+            songName = "Le Nozzi di Figaro";
+            artist = "Wolfgang Amadeus Mozart";
             break;
             
             case 0x463A:
@@ -924,6 +1005,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x52);
             uart1_txwrite(0x105);
+            
+            songName = "Candide Overture";
+            artist = "Leonard Bernstein";
             break;
             
             case 0x6AFE:
@@ -933,6 +1017,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x53);
             uart1_txwrite(0x106);
+            
+            songName = "Every Breath You Take";
+            artist = "The Police";
             break;
             
             case 0x2617:
@@ -942,6 +1029,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x54);
             uart1_txwrite(0x107);
+            
+            songName = "Cotton Eyed Joe";
+            artist = "Rednex";
             break;
             
             case 0x4E5F:
@@ -951,6 +1041,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x55);
             uart1_txwrite(0x108);
+            
+            songName = "Bohemian Rhapsody";
+            artist = "Queen";
             break;
             
             case 0x5ABA:
@@ -960,6 +1053,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x56);
             uart1_txwrite(0x109);
+            
+            songName = "Sweet Home Alabama";
+            artist = "Lynyrd Skynyrd";
             break;
             
             case 0x2F9E:
@@ -969,6 +1065,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x57);
             uart1_txwrite(0x10A);
+            
+            songName = "Proud Mary";
+            artist = "Creedence Clearwater Revival";
             break;
             
             case 0x4B76:
@@ -978,6 +1077,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x58);
             uart1_txwrite(0x10B);
+            
+            songName = "Come on Eileen";
+            artist = "Dexys Midnight Runners";
             break;
             
             case 0x831C:
@@ -987,6 +1089,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x59);
             uart1_txwrite(0x10C);
+            
+            songName = "I Feel the Earth Move";
+            artist = "Carole King";
             break;
             
             case 0x4DF3: // 90
@@ -996,6 +1101,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x5A);
             uart1_txwrite(0x10D);
+            
+            songName = "It Don't Mean a Thing";
+            artist = "Duke Ellington";
             break;
             
             case 0x57F5:
@@ -1005,6 +1113,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x5B);
             uart1_txwrite(0x10E);
+            
+            songName = "Feliz Navidad";
+            artist = "Jose Feliciano";
             break;
             
             case 0x5CF8:
@@ -1014,6 +1125,9 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x5C);
             uart1_txwrite(0x10F);
+            
+            songName = "You Send Me";
+            artist = "Sam Cooke";
             break;
             
             case 0x5B8A:
@@ -1023,24 +1137,33 @@ void readTag(int num){
             uart1_txwrite(0x00);
             uart1_txwrite(0x5D);
             uart1_txwrite(0x110);
+            
+            songName = "Funkytown";
+            artist = "Lipps Inc.";
             break;
             
-            case 0xAE1B:
+            case 0x1E1B:
             uart1_txwrite(0xAA);
             uart1_txwrite(0x07);
             uart1_txwrite(0x02);
             uart1_txwrite(0x00);
             uart1_txwrite(0x5E);
             uart1_txwrite(0x111);
+            
+            songName = "Solsbury Hill";
+            artist = "Peter Gabriel";
             break;
             
-            case 0x4648:
+            case 0x464E:
             uart1_txwrite(0xAA);
             uart1_txwrite(0x07);
             uart1_txwrite(0x02);
             uart1_txwrite(0x00);
             uart1_txwrite(0x5F);
             uart1_txwrite(0x112);
+            
+            songName = "Tongue Tied";
+            artist = "Grouplove";
             break;
             
         default:

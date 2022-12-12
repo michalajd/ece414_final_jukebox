@@ -48,9 +48,9 @@ int main() {
                 readTag(num); // switch statement that checks each tag ID
                 name = retName();
                 art = artName();
-                uart1_txwrite_str(name);
-                uart1_txwrite_str("\n");
-                uart1_txwrite_str(art);
+                //uart1_txwrite_str(name);
+                //uart1_txwrite_str("\n");
+                //uart1_txwrite_str(art);
               
             }
         }
