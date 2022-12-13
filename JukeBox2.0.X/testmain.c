@@ -13,6 +13,12 @@
 #include "fsm.h"
 #include <string.h>
 #include "ts_lcd.h"
+#include "timer1.h"
+#include "tft_master.h"
+#include "ts_lcd.h"
+#include "adc_intf.h"
+#include "tft_gfx.h"
+#include "testmain.h"
 
 /* Clock configuration */
 #pragma config FNOSC = FRCPLL, POSCMOD = OFF
@@ -23,46 +29,54 @@
 #define RX_BUFFER 100
 
 int buffer[RX_BUFFER];
-//int temp_buff;
 uint8_t i = 0;
-int num; // concatenated hex number
+uint8_t temp;
+
 
 char* name;
 char* art;
 
 int main() {
+    SYSTEMConfigPerformance(PBCLK);
+    
+    configureADC();
     uart1_init(9600);
+    timer1_init();
+    FSM_init();
     ts_lcd_init();
+    porta_in_init();
     
     while(1){
-        
+
         while(uart1_rxrdy()){
             
                 int tmp = uart1_rxread();
                 buffer[i] = tmp;
                 i++;
-
+                
             if (i > 9) {
                 i = 0;
-                
                 num = concat_int(buffer[5], buffer[6]); 
-            
+         
                 readTag(num); // switch statement that checks each tag ID
-                name = retName();
-                art = artName();
-                //uart1_txwrite_str(name);
-                //uart1_txwrite_str("\n");
-                //uart1_txwrite_str(art);
+                tag_flag = 1;
               
             }
         }
-                
+        
+        if((porta_in_read() == 0x01)){
+            pause = 1;
+            //uart1_txwrite_str("btn1");
+        }
+        else if((porta_in_read() == 0x02)){
+            play = 1;
+            //uart1_txwrite_str("btn2");
+        } 
+        
+           FSM_tick();
+           tag_flag = 0; 
         
     } //end of while(1)
-        
-        //tag(temp_buff);
-        //FSM_tick();
-        //tag_flag = 0; // sets tag flag to 0 when there's no input
     
     return (EXIT_SUCCESS);
 }

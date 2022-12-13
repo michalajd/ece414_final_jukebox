@@ -13,7 +13,11 @@ extern "C" {
 #endif
 
 char temp_buff;
-uint8_t i = 0;
+int num;
+int sig;
+uint8_t pause;
+uint8_t play;
+//uint8_t i = 0;
 uint8_t tag_flag;
 
 

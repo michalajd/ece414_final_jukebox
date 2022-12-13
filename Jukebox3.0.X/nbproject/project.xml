@@ -15,6 +15,7 @@
             <sourceRootList>
                 <sourceRootElem>../JukeBox2.0.X</sourceRootElem>
                 <sourceRootElem>../JukeBox.X</sourceRootElem>
+                <sourceRootElem>../../ece414_arnold_dennis/Lab03.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

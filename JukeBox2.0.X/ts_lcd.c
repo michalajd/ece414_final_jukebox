@@ -13,49 +13,9 @@ char message[30];
 const int screenL = 250;
 
 
-
-/*uint8_t get_ts_lcd(uint16_t *px, uint16_t *py){
-    struct TSPoint p;
-    
-        p.x = 0;
-        p.y = 0;
-        p.z = 0;
-        
-        getPoint(&p);
-        uint16_t x = p.x;
-        uint16_t y = p.y;
-        uint16_t z = p.z;
-        
-        
-        uint16_t x1Prime = 0;
-        uint16_t y1Prime = 0;
-        uint16_t x2Prime = 319;
-        uint16_t y2Prime = 239;
-        
-        // values from test program
-        uint16_t x1 = 150; //130
-        uint16_t y1 = 935; //910; //910 //x coord
-        uint16_t x2 = 850; //890
-        uint16_t y2 = 345 ; //350; //350
-        
-        x_mult = ((y-y1)*(x2Prime-x1Prime))/(y2-y1) + x1Prime;
-        y_mult = ((x-x1)*(y2Prime-y1Prime))/(x2-x1) + y1Prime;
-        
-        /*The problem with the equations: x2prime is the max value. however ,the conversion is not 1:1 so it's kinda parabolic 
-        
-        //*px = x_mult;
-        //*py = y_mult;
-        
-        if(z > 0){
-            
-            return 1;
-        }
-        else return 0; 
-} */
-
 void displaySong(char* song){
     // note: doing this without LCD so spacing is approximate
-    tft_setTextColor(ILI9341_WHITE);
+    //tft_setTextColor(ILI9341_WHITE);
 
     // track title
     tft_setTextSize(2);
@@ -67,7 +27,7 @@ void displaySong(char* song){
 
 void displayArtist(char* artist){
     
-    tft_setTextColor(ILI9341_WHITE);
+    
     // artist name
     tft_setTextSize(1);
     int x = (screenL/2) - ((screenL/90)*strlen(artist));
@@ -83,6 +43,27 @@ void ts_lcd_init(){
     tft_begin();
     tft_setRotation(3); 
     tft_fillScreen(ILI9341_BLACK);  
-    displaySong("The Less I Know the Better");    
-    displayArtist("Tears for Fears");
+    tft_setTextColor(ILI9341_WHITE);
+    displaySong("No Song Playing");    
+    displayArtist("Please Scan A Tag");
+}
+
+uint8_t reverse(uint8_t a) {
+    if (a==0) return 1;
+    else return 0;
+}
+
+void printingTest(uint8_t in) {
+    if (in == 1) {
+        tft_setTextSize(5);
+        tft_setCursor(15, 20);
+        tft_setTextColor(ILI9341_RED);
+        tft_writeString("YES");
+    }
+    else {
+        tft_setTextSize(5);
+        tft_setCursor(15, 20);
+        tft_setTextColor(ILI9341_GREEN);
+        tft_writeString("NO");
+    }
 }

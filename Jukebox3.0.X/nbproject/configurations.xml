@@ -16,6 +16,8 @@
       <itemPath>../JukeBox2.0.X/tft_gfx.h</itemPath>
       <itemPath>../JukeBox2.0.X/tft_master.h</itemPath>
       <itemPath>../JukeBox2.0.X/ts_lcd.h</itemPath>
+      <itemPath>../../ece414_arnold_dennis/Lab03.X/portb_out.h</itemPath>
+      <itemPath>../../ece414_arnold_dennis/Lab03.X/porta_in.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -35,6 +37,8 @@
       <itemPath>../JukeBox2.0.X/tft_gfx.c</itemPath>
       <itemPath>../JukeBox2.0.X/tft_master.c</itemPath>
       <itemPath>../JukeBox2.0.X/ts_lcd.c</itemPath>
+      <itemPath>../../ece414_arnold_dennis/Lab03.X/portb_out.c</itemPath>
+      <itemPath>../../ece414_arnold_dennis/Lab03.X/porta_in.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -45,6 +49,7 @@
   <sourceRootList>
     <Elem>../JukeBox2.0.X</Elem>
     <Elem>../JukeBox.X</Elem>
+    <Elem>../../ece414_arnold_dennis/Lab03.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -233,6 +238,7 @@
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="lastid" value=""/>
         <property key="memories.configurationmemory" value="true"/>
         <property key="memories.dataflash" value="true"/>
