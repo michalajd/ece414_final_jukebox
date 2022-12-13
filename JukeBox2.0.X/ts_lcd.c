@@ -34,8 +34,7 @@ void displayArtist(char* artist){
     tft_setCursor(x,138);
     tft_writeString(artist);
 
-    // default = play button
-    tft_fillTriangle(100, 200, 100, 160, 120, 180, ILI9341_WHITE);
+    
 }
 
 void ts_lcd_init(){
@@ -43,6 +42,30 @@ void ts_lcd_init(){
     tft_begin();
     tft_setRotation(3); 
     tft_fillScreen(ILI9341_BLACK);  
+    
+    // making tft pretty
+    tft_fillCircle(30, 60, 7, ILI9341_MAGENTA);
+    tft_fillCircle(60, 60, 7, ILI9341_MAGENTA);
+    tft_fillRect(35, 30, 2, 30, ILI9341_MAGENTA);
+    tft_fillRect(65, 30, 2, 30, ILI9341_MAGENTA);
+    tft_drawLine(35, 30, 65, 30, ILI9341_MAGENTA);
+    
+    tft_setTextSize(3);
+    tft_setTextColor(ILI9341_MAGENTA);
+    tft_setCursor(100, 23);
+    tft_writeString("MODERN");
+    tft_setCursor(90, 50);
+    tft_writeString("JUKEBOX");
+    
+    tft_fillCircle(240, 60, 7, ILI9341_MAGENTA);
+    tft_fillCircle(270, 60, 7, ILI9341_MAGENTA);
+    tft_fillRect(245, 30, 2, 30, ILI9341_MAGENTA);
+    tft_fillRect(275, 30, 2, 30, ILI9341_MAGENTA);
+    tft_drawLine(245, 30, 275, 30, ILI9341_MAGENTA);
+    
+    // default = play button
+    //tft_fillTriangle(130, 200, 130, 160, 150, 180, ILI9341_WHITE);
+    
     tft_setTextColor(ILI9341_WHITE);
     displaySong("No Song Playing");    
     displayArtist("Please Scan A Tag");
